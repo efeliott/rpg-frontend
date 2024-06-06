@@ -18,6 +18,7 @@ import Profile from './components/Profile';
 import EditProfile from './components/EditProfile';
 import SessionManagementPage from './pages/SessionManagementPage';
 import GameMasterPage from './pages/GameMasterPage';
+import PlayerSessionPage from './pages/PlayerSessionPage';
 // import PlayerDashboardPage from './pages/PlayerDashboardPage';
 
 const App = () => {
@@ -41,6 +42,7 @@ const App = () => {
                     <Route path="/sessions" element={<SessionsList />} />
                     <Route path="/profile" element={<Profile />} />
                     <Route path="/profile/edit" element={<EditProfile />} />
+                    <Route path="/session/:sessionToken/play" element={<PlayerSessionPage />} />
                     <Route path="/game-master/:sessionToken" element={
                         <PrivateRoute>
                             <GameMasterPage />

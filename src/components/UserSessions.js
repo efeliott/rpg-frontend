@@ -35,7 +35,7 @@ const UserSessions = () => {
         if (isGameMaster) {
             navigate(`/session/${session.token}`);
         } else {
-            navigate(`/sessions/${session.token}/play`);
+            navigate(`/session/${session.token}/play`);
         }
     };
 
