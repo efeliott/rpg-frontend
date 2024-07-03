@@ -2,10 +2,10 @@
 
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import SessionDetails from '../components/SessionDetails';
-import InvitePlayers from '../components/InvitePlayers';
-import CreatePlayer from '../components/CreatePlayer';
-import ManagePlayers from '../components/ManagePlayers';
+import SessionDetails from '../components/session/SessionDetails';
+import InvitePlayers from '../components/player/InvitePlayers';
+import CreatePlayer from '../components/player/CreatePlayer';
+import ManagePlayers from '../components/player/ManagePlayers';
 import '../style/SessionPage.css';
 
 const SessionPage = () => {

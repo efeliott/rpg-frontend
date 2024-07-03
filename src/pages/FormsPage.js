@@ -1,8 +1,8 @@
 // src/pages/HomePage.js
 
 import React, { useState } from 'react';
-import LoginForm from '../components/LoginForm';
-import SignupForm from '../components/RegisterForm';
+import LoginForm from '../components/auth/LoginForm';
+import SignupForm from '../components/auth/RegisterForm';
 import '../style/FormsPages.css';
 
 const HomePage = () => {

@@ -1,7 +1,7 @@
 // src/pages/LoginPage.js
 
 import React, { useState } from 'react';
-import LoginForm from '../components/LoginForm';
+import LoginForm from '../components/auth/LoginForm';
 import '../style/FormsPages.css';
 
 const LoginPage = () => {

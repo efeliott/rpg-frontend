@@ -1,9 +1,9 @@
 // src/pages/SessionManagementPage.js
 
 import React from 'react';
-import CreateSessionForm from '../components/CreateSessionForm';
-import InvitePlayers from '../components/InvitePlayers';
-import UserSessions from '../components/UserSessions';
+import CreateSessionForm from '../components/session/CreateSessionForm';
+import InvitePlayers from '../components/player/InvitePlayers';
+import UserSessions from '../components/session/UserSessions';
 import '../style/SessionManagementPage.css';
 
 const SessionManagementPage = () => {

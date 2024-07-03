@@ -1,8 +1,8 @@
 // src/pages/PlayerSessionPage.js
 
 import React, { useEffect, useState } from 'react';
-import QuestList from '../components/QuestList';
-import QuestForm from '../components/QuestForm';
+import QuestList from '../components/quest/QuestList';
+import QuestForm from '../components/quest/QuestForm';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
 import { toast } from 'react-toastify';

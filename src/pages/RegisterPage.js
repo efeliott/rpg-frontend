@@ -1,7 +1,7 @@
 // src/pages/RegisterPage.js
 
 import React, { useState } from 'react';
-import SignupForm from '../components/RegisterForm';
+import SignupForm from '../components/auth/RegisterForm';
 import '../style/FormsPages.css';
 
 const HomePage = () => {
