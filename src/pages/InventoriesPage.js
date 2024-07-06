@@ -1,3 +1,5 @@
+// src/pages/InventoriesPage.js
+
 import React from 'react';
 import InventoryList from '../components/inventory/InventoryList';
 import InventoryForm from '../components/inventory/InventoryForm';

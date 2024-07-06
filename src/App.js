@@ -19,7 +19,6 @@ import EditProfile from './components/auth/EditProfile';
 import SessionManagementPage from './pages/SessionManagementPage';
 import GameMasterPage from './pages/GameMasterPage';
 import PlayerSessionPage from './pages/PlayerSessionPage';
-import CharactersPage from './pages/CharactersPage';
 import InventoriesPage from './pages/InventoriesPage';
 // import PlayerDashboardPage from './pages/PlayerDashboardPage';
 
@@ -45,7 +44,6 @@ const App = () => {
                     <Route path="/profile" element={<Profile />} />
                     <Route path="/profile/edit" element={<EditProfile />} />
                     <Route path="/session/:sessionToken/play" element={<PlayerSessionPage />} />
-                    <Route path="/characters" element={<CharactersPage />} />
                     <Route path="/inventories" element={<InventoriesPage />} />
                     <Route path="/game-master/:sessionToken" element={
                         <PrivateRoute>

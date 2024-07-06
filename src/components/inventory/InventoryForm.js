@@ -1,3 +1,5 @@
+// src/components/inventory/InventoryForm.js
+
 import React, { useState } from 'react';
 import axios from 'axios';
 
@@ -9,7 +11,7 @@ const InventoryForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('/api/inventories', {
+      const response = await axios.post('http://127.0.0.1:8000/api/characters', {
         item_name: itemName,
         quantity,
         character_id: characterId,

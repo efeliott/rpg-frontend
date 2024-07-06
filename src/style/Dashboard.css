@@ -1,0 +1,70 @@
+.dashboard-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .dashboard-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .dashboard-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .dashboard-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sessions-section h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #007bff;
+  }
+  
+  .sessions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .session-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .session-item:last-child {
+    border-bottom: none;
+  }
+  
+  .session-item span {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .session-item button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .session-item button:hover {
+    background-color: #0056b3;
+  }
+  
