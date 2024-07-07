@@ -43,6 +43,10 @@ const Dashboard = () => {
   return (
     <div className="dashboard-container">
       <h1 className="dashboard-title">Dashboard</h1>
+      <div className="dashboard-tabs">
+        <button className="tab-button active">My Sessions</button>
+        <button className="tab-button">Invited Sessions</button>
+      </div>
       <div className="dashboard-sections">
         <div className="dashboard-section">
           <GameMasterSessions sessions={gameMasterSessions} onNavigate={handleNavigate} />

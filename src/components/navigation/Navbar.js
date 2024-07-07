@@ -28,10 +28,7 @@ const Navbar = () => {
     }, []);
 
     const handleLogout = () => {
-        // Suppression du token d'authentification
         localStorage.removeItem('token');
-
-        // Redirige l'utilisateur vers la page de connexion
         navigate('/login');
     };
 
@@ -46,7 +43,10 @@ const Navbar = () => {
     const isAuthenticated = !!localStorage.getItem('token');
 
     return (
-        <nav className="navbar">
+        <nav className="sidebar">
+            <div className="sidebar-header">
+                <h2>Games-Master</h2>
+            </div>
             <ul>
                 <li>
                     <Link to="/">Home</Link>
@@ -57,7 +57,7 @@ const Navbar = () => {
                             <Link to="/dashboard">Dashboard</Link>
                         </li>
                         <li>
-                            <Link to="/session">Session</Link>
+                            <Link to="/session">Sessions</Link>
                         </li>
                     </>
                 ) : null}
@@ -68,7 +68,7 @@ const Navbar = () => {
                     onMouseLeave={closeDropdown}
                 >
                     <button className="dropdown-toggle">
-                        {"Mon compte"} &#9662;
+                        {username} &#9662;
                     </button>
                     {isDropdownOpen && (
                         <div className="dropdown-menu">
